@@ -2,13 +2,13 @@
 syntax "Dockerfile" "Dockerfile[^/]*$" "\.dockerfile$"
 
 ## Keywords
-icolor red "^(FROM|RUN|CMD|LABEL|MAINTAINER|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)[[:space:]]"
+icolor brightmagenta "^(FROM|RUN|CMD|LABEL|MAINTAINER|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)[[:space:]]"
 
 ## Brackets & parenthesis
 color brightgreen "(\(|\)|\[|\])"
 
 ## Double ampersand
-color brightmagenta "&&"
+color red "&&"
 
 ## Comments
 icolor cyan "^[[:space:]]*#.*$"
